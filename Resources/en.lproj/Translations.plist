@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%.1f КБ</key>
+	<string>%.1f KB</string>
+	<key>%.1f МБ</key>
+	<string>%.1f MB</string>
+	<key>%@
+%@
+Оригинал сохранён в приложении. Если доступ запрещён: Настройки → Конфиденциальность → Фото → LocalSend 6.</key>
+	<string>%@
+%@
+The original is saved in the app. If access is denied: Settings → Privacy → Photos → LocalSend 6.</string>
+	<key>%lld Б</key>
+	<string>%lld B</string>
+	<key>%lu файлов</key>
+	<string>%lu files</string>
+	<key>: ошибка</key>
+	<string>: error</string>
+	<key>IP вручную</key>
+	<string>Enter IP address</string>
+	<key>IP получателя</key>
+	<string>Recipient IP</string>
+	<key>LocalSend 6 · 0.5.7
+Совместимо с iOS 6 и новее
+TLS 1.2 / 1.3</key>
+	<string>LocalSend 6 · 0.5.7
+iOS 6 and later
+TLS 1.2 / 1.3</string>
+	<key>iOS не разрешает приложению читать этот файл. Для доступа к защищённым папкам нужны права вне песочницы.</key>
+	<string>iOS does not allow this app to read the file. Protected folders require access outside the app sandbox.</string>
+	<key>×  Отклонить</key>
+	<string>×  Decline</string>
+	<key>×  Отменить</key>
+	<string>×  Cancel</string>
+	<key>Абсолютный путь к папке</key>
+	<string>Absolute folder path</string>
+	<key>Анимации</key>
+	<string>Animations</string>
+	<key>Библиотека фотографий недоступна</key>
+	<string>Photo library is unavailable</string>
+	<key>Видео выбрано. Нажмите на получателя.</key>
+	<string>Video selected. Tap a recipient.</string>
+	<key>Видео не поддерживается этой версией iOS. Для старого iPhone отправляйте MP4/MOV с H.264. HEVC/H.265 старый iPhone не декодирует; на отправителе выберите «Наиболее совместимый» формат. Оригинал сохранён в приложении.</key>
+	<string>This video is not supported by this iOS version. Send MP4/MOV with H.264 to an old iPhone. Old iPhones cannot decode HEVC/H.265; choose Most Compatible on the sender. The original is saved in the app.</string>
+	<key>Включено</key>
+	<string>On</string>
+	<key>Выберите обычный файл.</key>
+	<string>Select a regular file.</string>
+	<key>Выберите устройство или введите IP</key>
+	<string>Select a device or enter an IP address</string>
+	<key>Выберите файл, затем получателя</key>
+	<string>Select a file, then a recipient</string>
+	<key>Выбор фото и видео для отправки и сохранение полученных файлов в Фото.</key>
+	<string>Select photos and videos to send, and save received media to Photos.</string>
+	<key>Выборка</key>
+	<string>Selection</string>
+	<key>Выбрано: %@</key>
+	<string>Selected: %@</string>
+	<key>Выбрать файл и отправить</key>
+	<string>Select a file to send</string>
+	<key>Выключено</key>
+	<string>Off</string>
+	<key>Готов к получению файлов
+Откройте LocalSend на другом устройстве</key>
+	<string>Ready to receive files
+Open LocalSend on another device</string>
+	<key>Готово</key>
+	<string>Done</string>
+	<key>Добавить</key>
+	<string>Add</string>
+	<key>Дождитесь завершения текущей передачи</key>
+	<string>Wait for the current transfer to finish</string>
+	<key>Загрузка</key>
+	<string>Upload</string>
+	<key>Закрыть</key>
+	<string>Close</string>
+	<key>Запрос отправлен. Ожидаем «Принять» на получателе…</key>
+	<string>Request sent. Waiting for the recipient to accept…</string>
+	<key>Импорт файла…</key>
+	<string>Importing file…</string>
+	<key>Имя устройства</key>
+	<string>Device name</string>
+	<key>Имя: %@
+
+IP-адреса:
+%@
+
+HTTPS / TCP: %lu (%@)
+Обнаружение / UDP: 53317 (%@)
+Multicast: 224.0.0.167</key>
+	<string>Name: %@
+
+IP addresses:
+%@
+
+HTTPS / TCP: %lu (%@)
+Discovery / UDP: 53317 (%@)
+Multicast: 224.0.0.167</string>
+	<key>История отправок</key>
+	<string>Transfer history</string>
+	<key>Ищем устройства…
+Откройте LocalSend на получателе.
+Оба устройства должны быть в одной Wi-Fi сети.</key>
+	<string>Searching for devices…
+Open LocalSend on the recipient.
+Both devices must use the same Wi-Fi network.</string>
+	<key>Ищем устройства… также можно ввести IP вручную</key>
+	<string>Searching… you can also enter an IP address</string>
+	<key>КБ</key>
+	<string>KB</string>
+	<key>Корень</key>
+	<string>Root</string>
+	<key>Лиловый ▾</key>
+	<string>Purple ▾</string>
+	<key>МБ</key>
+	<string>MB</string>
+	<key>Медиа</key>
+	<string>Media</string>
+	<key>Мои файлы</key>
+	<string>My files</string>
+	<key>Нажмите, чтобы выбрать</key>
+	<string>Tap to select</string>
+	<key>Настройки</key>
+	<string>Settings</string>
+	<key>Не сохранено в Фото</key>
+	<string>Not saved to Photos</string>
+	<key>Не удалось запустить HTTPS-приёмник</key>
+	<string>Could not start the HTTPS receiver</string>
+	<key>Не удалось импортировать файл</key>
+	<string>Could not import the file</string>
+	<key>Не удалось открыть UDP 53317; используйте IP вручную</key>
+	<string>Could not open UDP 53317; enter the IP manually</string>
+	<key>Не удалось открыть папку
+%@
+
+Для защищённых папок нужны
+права вне песочницы приложения.</key>
+	<string>Could not open the folder
+%@
+
+Protected folders require access
+outside the app sandbox.</string>
+	<key>Не удалось преобразовать HEIC в JPEG: %s</key>
+	<string>Could not convert HEIC to JPEG: %s</string>
+	<key>Не удалось прочитать файл</key>
+	<string>Could not read the file</string>
+	<key>Не удалось сохранить видео</key>
+	<string>Could not save the video</string>
+	<key>Не удалось сохранить фотографию</key>
+	<string>Could not save the photo</string>
+	<key>Нет активных адресов</key>
+	<string>No active addresses</string>
+	<key>Нет доступа</key>
+	<string>No access</string>
+	<key>Нет доступа к файлу</key>
+	<string>Cannot access the file</string>
+	<key>Общее время передачи</key>
+	<string>Total transfer time</string>
+	<key>Общее время: %ld:%02ld</key>
+	<string>Total time: %ld:%02ld</string>
+	<key>Общие</key>
+	<string>General</string>
+	<key>Открыть</key>
+	<string>Open</string>
+	<key>Открыть %@</key>
+	<string>Open %@</string>
+	<key>Открыть проект на GitHub</key>
+	<string>Open the project on GitHub</string>
+	<key>Открыть путь</key>
+	<string>Open path</string>
+	<key>Отмена</key>
+	<string>Cancel</string>
+	<key>Отправить</key>
+	<string>Send</string>
+	<key>Отправить текст</key>
+	<string>Send text</string>
+	<key>Отправка: %.0f%%</key>
+	<string>Sending: %.0f%%</string>
+	<key>Отправлено: %@</key>
+	<string>Sent: %@</string>
+	<key>Очередь</key>
+	<string>Queued</string>
+	<key>Ошибка</key>
+	<string>Error</string>
+	<key>Ошибка записи</key>
+	<string>Write error</string>
+	<key>Ошибка передачи</key>
+	<string>Transfer error</string>
+	<key>Ошибка получения</key>
+	<string>Receive error</string>
+	<key>Папка</key>
+	<string>Folder</string>
+	<key>Папка пуста</key>
+	<string>Folder is empty</string>
+	<key>Подготовка</key>
+	<string>Preparation</string>
+	<key>Подключение к получателю…</key>
+	<string>Connecting to recipient…</string>
+	<key>Поиск устройств обновлён</key>
+	<string>Device search refreshed</string>
+	<key>Пока нет завершённых передач</key>
+	<string>No completed transfers yet</string>
+	<key>Получатель отклонил запрос (HTTP %ld)</key>
+	<string>Recipient declined the request (HTTP %ld)</string>
+	<key>Получение отменено</key>
+	<string>Receiving cancelled</string>
+	<key>Получение файлов</key>
+	<string>Receiving files</string>
+	<key>Получение…</key>
+	<string>Receiving…</string>
+	<key>Получено</key>
+	<string>Received</string>
+	<key>Получено %lu файл(ов) от %@</key>
+	<string>Received %lu file(s) from %@</string>
+	<key>Получить</key>
+	<string>Receive</string>
+	<key>Путь…</key>
+	<string>Path…</string>
+	<key>Светлая ▾</key>
+	<string>Light ▾</string>
+	<key>Синий ▾</key>
+	<string>Blue ▾</string>
+	<key>Системные объекты, сокеты и устройства отправлять нельзя.</key>
+	<string>System objects, sockets and device nodes cannot be sent.</string>
+	<key>Системный</key>
+	<string>System</string>
+	<key>Сначала выберите фото, текст или файл</key>
+	<string>Select media, text or a file first</string>
+	<key>Сохранение в Фото…</key>
+	<string>Saving to Photos…</string>
+	<key>Сохранение полученных фото и видео в Фото.</key>
+	<string>Save received photos and videos to Photos.</string>
+	<key>Сохранено в Фото</key>
+	<string>Saved to Photos</string>
+	<key>Сохранить</key>
+	<string>Save</string>
+	<key>Текст</key>
+	<string>Text</string>
+	<key>Текст добавлен. Выберите получателя.</key>
+	<string>Text added. Select a recipient.</string>
+	<key>Текст сохранится в файл</key>
+	<string>Text will be saved as a file</string>
+	<key>Тема</key>
+	<string>Theme</string>
+	<key>Тёмная ▾</key>
+	<string>Dark ▾</string>
+	<key>Устройства поблизости</key>
+	<string>Nearby devices</string>
+	<key>Устройство</key>
+	<string>Device</string>
+	<key>Устройство выбрано. Добавьте фото, текст или файл.</key>
+	<string>Device selected. Add media, text or a file.</string>
+	<key>Файл</key>
+	<string>File</string>
+	<key>Файл выбран. Нажмите на получателя.</key>
+	<string>File selected. Tap a recipient.</string>
+	<key>Файл недоступен.</key>
+	<string>File is unavailable.</string>
+	<key>Файл отправлен. Подтверждение получателя…</key>
+	<string>File sent. Waiting for confirmation…</string>
+	<key>Файл получен, но не сохранён в Фото</key>
+	<string>File received but not saved to Photos</string>
+	<key>Файлов пока нет.
+Добавьте фото или скопируйте файлы
+через iTunes → File Sharing.</key>
+	<string>No files yet.
+Add media or copy files
+using iTunes → File Sharing.</string>
+	<key>Файлов: %@ / %lu
+Размер: %@ / %@</key>
+	<string>Files: %@ / %lu
+Size: %@ / %@</string>
+	<key>Файлы /</key>
+	<string>Files /</string>
+	<key>Файлы получены</key>
+	<string>Files received</string>
+	<key>Файлы приложения</key>
+	<string>App files</string>
+	<key>Файлы сохранятся в папку приложения. Изображения и совместимые видео автоматически сохраняются в Фото; HEIC преобразуется в JPEG. Остальные файлы можно выбрать кнопкой «Файл» или забрать через iTunes File Sharing. Уже существующие файлы не перезаписываются.</key>
+	<string>Files are saved in the app. Images and compatible videos are also saved to Photos; HEIC is converted to JPEG. Other files can be selected with File or copied via iTunes File Sharing. Existing files are never overwritten.</string>
+	<key>Формат изображения не удалось открыть</key>
+	<string>Could not open this image format</string>
+	<key>Фото выбрано. Нажмите на получателя.</key>
+	<string>Photo selected. Tap a recipient.</string>
+	<key>Цвет</key>
+	<string>Color</string>
+	<key>Это не обычный файл</key>
+	<string>Not a regular file</string>
+	<key>Это устройство</key>
+	<string>This device</string>
+	<key>Язык</key>
+	<string>Language</string>
+	<key>не запущен</key>
+	<string>not running</string>
+	<key>не запущено</key>
+	<string>not running</string>
+	<key>работает</key>
+	<string>running</string>
+	<key>файл</key>
+	<string>a file</string>
+	<key>хочет отправить вам %@</key>
+	<string>wants to send you %@</string>
+	<key>ⓘ  Подробнее</key>
+	<string>ⓘ  Details</string>
+	<key>ⓘ  Скрыть</key>
+	<string>ⓘ  Hide</string>
+	<key>⚙  Параметры получения</key>
+	<string>⚙  Receive settings</string>
+	<key>✓  Готово</key>
+	<string>✓  Done</string>
+	<key>✓  Принять</key>
+	<string>✓  Accept</string>
+</dict>
+</plist>

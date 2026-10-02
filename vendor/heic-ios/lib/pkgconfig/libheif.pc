@@ -1,0 +1,14 @@
+prefix=/Users/anazerka/Documents/ChatGPT/unlocalsend/vendor/heic-ios
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libheif
+Description: HEIF image codec.
+URL: https://github.com/strukturag/libheif
+Version: 1.18.2
+Requires:
+Requires.private: libde265
+Libs: -L${libdir} -lheif
+Libs.private: -lc++
+Cflags: -I${includedir}

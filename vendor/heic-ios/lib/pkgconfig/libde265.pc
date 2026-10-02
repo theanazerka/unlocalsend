@@ -1,0 +1,13 @@
+prefix=/Users/anazerka/Documents/ChatGPT/unlocalsend/vendor/heic-ios
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libde265
+Description: H.265/HEVC video decoder.
+URL: https://github.com/strukturag/libde265
+Version: 1.0.16
+Requires:
+Libs: -lde265 -L${libdir}
+Libs.private: -lc++
+Cflags: -I${includedir}

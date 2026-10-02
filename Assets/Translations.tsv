@@ -1,0 +1,134 @@
+%.1f КБ|%.1f KB|%.1f КБ
+%.1f МБ|%.1f MB|%.1f МБ
+%lld Б|%lld B|%lld Б
+%@\n%@\nОригинал сохранён в приложении. Если доступ запрещён: Настройки → Конфиденциальность → Фото → LocalSend 6.|%@\n%@\nThe original is saved in the app. If access is denied: Settings → Privacy → Photos → LocalSend 6.|%@\n%@\nОригінал збережено в застосунку. Якщо доступ заборонено: Налаштування → Приватність → Фото → LocalSend 6.
+%lu файлов|%lu files|%lu файлів
+: ошибка|: error|: помилка
+IP вручную|Enter IP address|IP вручну
+IP получателя|Recipient IP|IP одержувача
+LocalSend 6 · 0.5.7\nСовместимо с iOS 6 и новее\nTLS 1.2 / 1.3|LocalSend 6 · 0.5.7\niOS 6 and later\nTLS 1.2 / 1.3|LocalSend 6 · 0.5.7\niOS 6 і новіші\nTLS 1.2 / 1.3
+iOS не разрешает приложению читать этот файл. Для доступа к защищённым папкам нужны права вне песочницы.|iOS does not allow this app to read the file. Protected folders require access outside the app sandbox.|iOS не дозволяє застосунку читати цей файл. Захищені папки потребують прав поза пісочницею застосунку.
+×  Отклонить|×  Decline|×  Відхилити
+×  Отменить|×  Cancel|×  Скасувати
+Абсолютный путь к папке|Absolute folder path|Абсолютний шлях до папки
+Анимации|Animations|Анімації
+Библиотека фотографий недоступна|Photo library is unavailable|Фототека недоступна
+Включено|On|Увімкнено
+Выберите обычный файл.|Select a regular file.|Виберіть звичайний файл.
+Выберите устройство или введите IP|Select a device or enter an IP address|Виберіть пристрій або введіть IP
+Выберите файл, затем получателя|Select a file, then a recipient|Виберіть файл, потім одержувача
+Выборка|Selection|Вибір
+Выбрано: %@|Selected: %@|Вибрано: %@
+Выбрать файл и отправить|Select a file to send|Вибрати файл і надіслати
+Выключено|Off|Вимкнено
+Готов к получению файлов\nОткройте LocalSend на другом устройстве|Ready to receive files\nOpen LocalSend on another device|Готовий отримувати файли\nВідкрийте LocalSend на іншому пристрої
+Готово|Done|Готово
+Добавить|Add|Додати
+Дождитесь завершения текущей передачи|Wait for the current transfer to finish|Дочекайтеся завершення поточної передачі
+Загрузка|Upload|Завантаження
+Закрыть|Close|Закрити
+Запрос отправлен. Ожидаем «Принять» на получателе…|Request sent. Waiting for the recipient to accept…|Запит надіслано. Чекаємо згоди одержувача…
+Импорт файла…|Importing file…|Імпорт файлу…
+Имя устройства|Device name|Ім’я пристрою
+Имя: %@\n\nIP-адреса:\n%@\n\nHTTPS / TCP: %lu (%@)\nОбнаружение / UDP: 53317 (%@)\nMulticast: 224.0.0.167|Name: %@\n\nIP addresses:\n%@\n\nHTTPS / TCP: %lu (%@)\nDiscovery / UDP: 53317 (%@)\nMulticast: 224.0.0.167|Ім’я: %@\n\nIP-адреси:\n%@\n\nHTTPS / TCP: %lu (%@)\nПошук / UDP: 53317 (%@)\nMulticast: 224.0.0.167
+История отправок|Transfer history|Історія передач
+Ищем устройства…\nОткройте LocalSend на получателе.\nОба устройства должны быть в одной Wi-Fi сети.|Searching for devices…\nOpen LocalSend on the recipient.\nBoth devices must use the same Wi-Fi network.|Шукаємо пристрої…\nВідкрийте LocalSend на одержувачі.\nОбидва пристрої мають бути в одній мережі Wi-Fi.
+Ищем устройства… также можно ввести IP вручную|Searching… you can also enter an IP address|Шукаємо пристрої… також можна ввести IP вручну
+КБ|KB|КБ
+Корень|Root|Корінь
+Лиловый ▾|Purple ▾|Бузковий ▾
+МБ|MB|МБ
+Медиа|Media|Медіа
+Мои файлы|My files|Мої файли
+Нажмите, чтобы выбрать|Tap to select|Натисніть, щоб вибрати
+Настройки|Settings|Налаштування
+Не сохранено в Фото|Not saved to Photos|Не збережено у Фото
+Не удалось запустить HTTPS-приёмник|Could not start the HTTPS receiver|Не вдалося запустити HTTPS-приймач
+Не удалось импортировать файл|Could not import the file|Не вдалося імпортувати файл
+Не удалось открыть UDP 53317; используйте IP вручную|Could not open UDP 53317; enter the IP manually|Не вдалося відкрити UDP 53317; введіть IP вручну
+Не удалось открыть папку\n%@\n\nДля защищённых папок нужны\nправа вне песочницы приложения.|Could not open the folder\n%@\n\nProtected folders require access\noutside the app sandbox.|Не вдалося відкрити папку\n%@\n\nЗахищені папки потребують\nправ поза пісочницею застосунку.
+Не удалось преобразовать HEIC в JPEG: %s|Could not convert HEIC to JPEG: %s|Не вдалося перетворити HEIC на JPEG: %s
+Не удалось прочитать файл|Could not read the file|Не вдалося прочитати файл
+Не удалось сохранить фотографию|Could not save the photo|Не вдалося зберегти фотографію
+Нет активных адресов|No active addresses|Немає активних адрес
+Нет доступа|No access|Немає доступу
+Нет доступа к файлу|Cannot access the file|Немає доступу до файлу
+Общее время передачи|Total transfer time|Загальний час передачі
+Общее время: %ld:%02ld|Total time: %ld:%02ld|Загальний час: %ld:%02ld
+Общие|General|Загальні
+Открыть|Open|Відкрити
+Открыть %@|Open %@|Відкрити %@
+Открыть проект на GitHub|Open the project on GitHub|Відкрити проєкт на GitHub
+Открыть путь|Open path|Відкрити шлях
+Отмена|Cancel|Скасувати
+Отправить|Send|Надіслати
+Отправить текст|Send text|Надіслати текст
+Отправка: %.0f%%|Sending: %.0f%%|Надсилання: %.0f%%
+Отправлено: %@|Sent: %@|Надіслано: %@
+Очередь|Queued|У черзі
+Ошибка|Error|Помилка
+Ошибка записи|Write error|Помилка запису
+Ошибка передачи|Transfer error|Помилка передачі
+Ошибка получения|Receive error|Помилка отримання
+Папка|Folder|Папка
+Папка пуста|Folder is empty|Папка порожня
+Подготовка|Preparation|Підготовка
+Подключение к получателю…|Connecting to recipient…|Підключення до одержувача…
+Поиск устройств обновлён|Device search refreshed|Пошук пристроїв оновлено
+Пока нет завершённых передач|No completed transfers yet|Завершених передач ще немає
+Получатель отклонил запрос (HTTP %ld)|Recipient declined the request (HTTP %ld)|Одержувач відхилив запит (HTTP %ld)
+Получение отменено|Receiving cancelled|Отримання скасовано
+Получение файлов|Receiving files|Отримання файлів
+Получение…|Receiving…|Отримання…
+Получено|Received|Отримано
+Получено %lu файл(ов) от %@|Received %lu file(s) from %@|Отримано %lu файл(ів) від %@
+Получить|Receive|Отримати
+Путь…|Path…|Шлях…
+Светлая ▾|Light ▾|Світла ▾
+Синий ▾|Blue ▾|Синій ▾
+Системные объекты, сокеты и устройства отправлять нельзя.|System objects, sockets and device nodes cannot be sent.|Системні об’єкти, сокети та вузли пристроїв надсилати не можна.
+Сначала выберите фото, текст или файл|Select media, text or a file first|Спочатку виберіть медіа, текст або файл
+Сохранение в Фото…|Saving to Photos…|Збереження у Фото…
+Сохранено в Фото|Saved to Photos|Збережено у Фото
+Сохранить|Save|Зберегти
+Текст|Text|Текст
+Текст добавлен. Выберите получателя.|Text added. Select a recipient.|Текст додано. Виберіть одержувача.
+Текст сохранится в файл|Text will be saved as a file|Текст буде збережено у файл
+Тема|Theme|Тема
+Тёмная ▾|Dark ▾|Темна ▾
+Устройства поблизости|Nearby devices|Пристрої поблизу
+Устройство|Device|Пристрій
+Устройство выбрано. Добавьте фото, текст или файл.|Device selected. Add media, text or a file.|Пристрій вибрано. Додайте медіа, текст або файл.
+Файл|File|Файл
+Файл выбран. Нажмите на получателя.|File selected. Tap a recipient.|Файл вибрано. Натисніть на одержувача.
+Файл недоступен.|File is unavailable.|Файл недоступний.
+Файл отправлен. Подтверждение получателя…|File sent. Waiting for confirmation…|Файл надіслано. Чекаємо підтвердження…
+Файл получен, но не сохранён в Фото|File received but not saved to Photos|Файл отримано, але не збережено у Фото
+Файлов пока нет.\nДобавьте фото или скопируйте файлы\nчерез iTunes → File Sharing.|No files yet.\nAdd media or copy files\nusing iTunes → File Sharing.|Файлів ще немає.\nДодайте медіа або скопіюйте файли\nчерез iTunes → File Sharing.
+Файлов: %@ / %lu\nРазмер: %@ / %@|Files: %@ / %lu\nSize: %@ / %@|Файлів: %@ / %lu\nРозмір: %@ / %@
+Файлы /|Files /|Файли /
+Файлы получены|Files received|Файли отримано
+Файлы приложения|App files|Файли застосунку
+Файлы сохранятся в папку приложения. Изображения и совместимые видео автоматически сохраняются в Фото; HEIC преобразуется в JPEG. Остальные файлы можно выбрать кнопкой «Файл» или забрать через iTunes File Sharing. Уже существующие файлы не перезаписываются.|Files are saved in the app. Images and compatible videos are also saved to Photos; HEIC is converted to JPEG. Other files can be selected with File or copied via iTunes File Sharing. Existing files are never overwritten.|Файли зберігаються в застосунку. Зображення та сумісні відео також зберігаються у Фото; HEIC перетворюється на JPEG. Інші файли можна вибрати кнопкою «Файл» або скопіювати через iTunes File Sharing. Наявні файли не перезаписуються.
+Формат изображения не удалось открыть|Could not open this image format|Не вдалося відкрити цей формат зображення
+Фото выбрано. Нажмите на получателя.|Photo selected. Tap a recipient.|Фото вибрано. Натисніть на одержувача.
+Цвет|Color|Колір
+Это не обычный файл|Not a regular file|Це не звичайний файл
+Это устройство|This device|Цей пристрій
+не запущен|not running|не запущено
+не запущено|not running|не запущено
+работает|running|працює
+файл|a file|файл
+хочет отправить вам %@|wants to send you %@|хоче надіслати вам %@
+ⓘ  Подробнее|ⓘ  Details|ⓘ  Докладніше
+ⓘ  Скрыть|ⓘ  Hide|ⓘ  Приховати
+⚙  Параметры получения|⚙  Receive settings|⚙  Параметри отримання
+✓  Готово|✓  Done|✓  Готово
+✓  Принять|✓  Accept|✓  Прийняти
+Язык|Language|Мова
+Системный|System|Системна
+Видео не поддерживается этой версией iOS. Для старого iPhone отправляйте MP4/MOV с H.264. HEVC/H.265 старый iPhone не декодирует; на отправителе выберите «Наиболее совместимый» формат. Оригинал сохранён в приложении.|This video is not supported by this iOS version. Send MP4/MOV with H.264 to an old iPhone. Old iPhones cannot decode HEVC/H.265; choose Most Compatible on the sender. The original is saved in the app.|Ця версія iOS не підтримує відео. Для старого iPhone надсилайте MP4/MOV з H.264. Старі iPhone не декодують HEVC/H.265; виберіть «Найбільш сумісний» формат на відправнику. Оригінал збережено в застосунку.
+Видео выбрано. Нажмите на получателя.|Video selected. Tap a recipient.|Відео вибрано. Натисніть на одержувача.
+Не удалось сохранить видео|Could not save the video|Не вдалося зберегти відео
+Выбор фото и видео для отправки и сохранение полученных файлов в Фото.|Select photos and videos to send, and save received media to Photos.|Вибір фото та відео для надсилання і збереження отриманих файлів у Фото.
+Сохранение полученных фото и видео в Фото.|Save received photos and videos to Photos.|Збереження отриманих фото та відео у Фото.

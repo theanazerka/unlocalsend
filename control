@@ -1,0 +1,9 @@
+Package: com.unlocalsend.ios6
+Name: LocalSend 6
+Version: 0.5.7
+Architecture: iphoneos-arm
+Description: Minimal LocalSend v2 client for iOS 6
+Maintainer: LocalSend6
+Author: LocalSend6
+Section: Networking
+Depends: firmware (>= 6.0)

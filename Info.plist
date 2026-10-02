@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>LocalSend 6</string>
+	<key>CFBundleExecutable</key>
+	<string>LocalSend6</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon.png</string>
+		<string>Icon@2x.png</string>
+		<string>Icon-60@2x.png</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.unlocalsend.ios6</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>ru</string>
+		<string>en</string>
+		<string>uk</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>LocalSend 6</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.5.7</string>
+	<key>CFBundleVersion</key>
+	<string>5.7</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MinimumOSVersion</key>
+	<string>6.0</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Сохранение полученных фото и видео в Фото.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Выбор фото и видео для отправки и сохранение полученных файлов в Фото.</string>
+	<key>UIApplicationExitsOnSuspend</key>
+	<true/>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UILaunchImageFile</key>
+	<string>Default</string>
+	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

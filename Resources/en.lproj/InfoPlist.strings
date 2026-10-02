@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Save received photos and videos to Photos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Select photos and videos to send, and save received media to Photos.</string>
+</dict>
+</plist>
