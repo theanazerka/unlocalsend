@@ -1,57 +1,69 @@
 # LocalSend 6
 
-Клиент LocalSend для iOS 6, собираемый Theos. Реализует обнаружение устройств через UDP multicast отправку по HTTP / HTTPS и приём файлов по HTTPS API LocalSend v2.
+A LocalSend client for iOS 6, built with Theos. Supports device discovery over UDP multicast, sending files over HTTP / HTTPS, and receiving files through the LocalSend v2 HTTPS API.
 
-## Возможности
+## Features
 
-- Полная высота экрана iPhone 5 / 5s (320×568), с launch images для iOS 6 и новее.
-- Интерфейс на UIKit / QuartzCore: вкладки, карточки, светлая и тёмная темы, три акцентных цвета.
-- Выбор фото и видео, отправка текста; файловый браузер для iOS 6 с корнем `/`, скрытыми файлами, закладкой Documents и вводом пути. Доступ к защищённым файлам определяется правами приложения.
-- Русский, английский и украинский интерфейс. В Настройки → Язык доступны ручной выбор и «Системный» (по умолчанию). Для неподдерживаемого языка используется английский.
-- Изображения и совместимые видео автоматически сохраняются в Фото. Видео, которое система может декодировать, при необходимости преобразуется в H.264/AAC 480p. HEVC/H.265 старые версии iOS не декодируют; оригинал остаётся в приложении.
-- Инфо на вкладке «Получить» показывает имя, все активные IPv4/IPv6 адреса с интерфейсами, HTTPS/TCP и UDP порты и состояние слушателей.
-- Во вкладке «Отправить» подписи иконок имеют явные рамки; IP вручную открывается отдельной кнопкой.
-- Имя устройства, анимации и история последних десяти успешных отправок сохраняются между запусками.
-- Приём по HTTPS: подтверждение «Принять / Отклонить», прогресс, подробности, отмена, несколько файлов. Принимаемые данные записываются на диск по частям; поддерживаются Content-Length и chunked.
-- Проверяет переданную SHA-256 сумму; при ошибке или отмене удаляет временный файл. Имена совпавших файлов получают числовой суффикс.
-- Логотип на вкладке «Получить» плавно вращается по часовой стрелке (оборот за 25 секунд); настройка «Анимации» отключает вращение.
-- Слушает multicast `224.0.0.167:53317` и отвечает на объявления LocalSend.
-- Показывает найденные устройства; можно также указать IP вручную.
-- Отправляет файлы из папки приложения `Documents` через `prepare-upload` и `upload`.
-- Папка `Documents` доступна через iTunes File Sharing.
+- Full iPhone 5 / 5s screen height (320×568), with launch images for iOS 6 and later.
+- UIKit / QuartzCore interface with tabs, cards, light and dark themes, and three accent colors.
+- Photo and video selection, text sharing, and an iOS 6 file browser starting at `/`, with hidden files, a Documents shortcut, and manual path entry. Access to protected files depends on the app's permissions.
+- Russian, English, and Ukrainian interfaces. Settings → Language offers manual selection and System (the default). Unsupported languages fall back to English.
+- Images and compatible videos are automatically saved to Photos. Videos the system can decode are converted to H.264/AAC 480p when necessary. Older iOS versions cannot decode HEVC/H.265; the original remains in the app.
+- The Info button on the Receive tab shows the device name, all active IPv4/IPv6 addresses and their interfaces, HTTPS/TCP and UDP ports, and listener status.
+- Icon labels on the Send tab use explicit layout frames; manual IP entry opens through a separate button.
+- The device name, animation preference, and history of the last ten successful transfers persist between launches.
+- HTTPS receiving with Accept / Decline confirmation, progress, details, cancellation, and multiple files. Incoming data is written to disk in chunks; both Content-Length and chunked transfer encoding are supported.
+- Verifies the supplied SHA-256 checksum and removes temporary files on failure or cancellation. Conflicting filenames receive a numeric suffix.
+- The logo on the Receive tab rotates smoothly clockwise, completing one turn every 25 seconds. The Animations setting disables rotation.
+- Listens for multicast traffic at `224.0.0.167:53317` and responds to LocalSend announcements.
+- Displays discovered devices and supports manual IP entry.
+- Sends files from the app's `Documents` folder through `prepare-upload` and `upload`.
+- Exposes the `Documents` folder through iTunes File Sharing.
 
-## Сборка
+## Building
 
-Установите Theos и iOS 6 SDK, затем выполните:
+Install Theos and the iOS 6 SDK, then run:
 
 ```sh
 make package FINALPACKAGE=1 DEBUG=0
 ```
 
-Пакет появится в каталоге `packages/`. Сборка использует SDK iPhoneOS6.1 и минимальную версию iOS 6.0. После сборки выполните `python3 scripts/package_ipa.py`, чтобы получить IPA.
+The package is created in `packages/`. The build uses the iPhoneOS6.1 SDK and targets iOS 6.0 or later. After building, run `python3 scripts/package_ipa.py` to create an IPA.
 
-## Использование
+## Usage
 
-1. Установите пакет на устройство с jailbreak и подключите оба устройства к одной Wi-Fi сети.
-2. Оставьте принимающий LocalSend открытым. Шифрование отключать не требуется: клиент использует протокол, объявленный устройством.
-3. Скопируйте файлы в приложение через iTunes → устройство → Apps → File Sharing → LocalSend 6.
-4. Во вкладке «Отправить» выберите фото, текст или файл, затем нажмите карточку получателя. При ручном вводе IP нажмите «Отправить».
-5. Кнопка «Файл» открывает браузер от корня `/`. Кнопка «Мои файлы» ведёт в Documents; внешние файлы копируются в приложение перед отправкой. Ripple и анимация таббара отключены; плавный переключатель и вращение логотипа управляются настройкой «Анимации».
+1. Install the package on a jailbroken device and connect both devices to the same Wi-Fi network.
+2. Keep LocalSend open on the receiving device. There is no need to disable encryption: the client uses the protocol announced by the device.
+3. Copy files into the app through iTunes → device → Apps → File Sharing → LocalSend 6.
+4. On the Send tab, select a photo, text, or file, then tap the recipient's card. When entering an IP address manually, tap Send.
+5. The File button opens a browser starting at `/`. My files opens Documents; external files are copied into the app before sending. Ripple effects and tab bar animations are disabled. The smooth switch animation and logo rotation are controlled by the Animations setting.
 
-Исходящий HTTPS использует встроенный Mbed TLS 3.6.7 с TLS 1.2 / 1.3 и сертификатом ECDSA P-256, созданным один раз на устройстве. Он сохраняется с приватным ключом в Library/LocalSendIdentity (не в Documents / File Sharing) и используется повторно. Это устраняет повторную генерацию RSA перед каждым запросом. Входящий HTTPS поддерживает TLS 1.2; слушает TCP 53317, отвечает на /info, /register, /prepare-upload, /upload и /cancel. Отпечаток сертификата получателя сверяется с fingerprint из объявления LocalSend во время handshake. При ручном вводе IP без объявления отпечаток не проверяется. Для совместимости с iOS 6 монотонные часы реализованы через mach_absolute_time. Для устройств, объявляющих HTTP, используется NSURLConnection. Ошибка последней передачи сохраняется в Documents/LastTransferError.txt. Отправляемые файлы целиком загружаются в память, поэтому для старых устройств подходят небольшие файлы.
+Outgoing HTTPS uses the bundled Mbed TLS 3.6.7 library with TLS 1.2 / 1.3 and an ECDSA P-256 certificate generated once on the device. The certificate and private key are stored in `Library/LocalSendIdentity`, outside Documents / File Sharing, and reused. This avoids regenerating an RSA key before every request. Incoming HTTPS supports TLS 1.2, listens on TCP port 53317, and handles `/info`, `/register`, `/prepare-upload`, `/upload`, and `/cancel`. During the handshake, the recipient's certificate fingerprint is checked against the fingerprint in its LocalSend announcement. When an IP address is entered manually without an announcement, the fingerprint is not checked. For iOS 6 compatibility, the monotonic clock uses `mach_absolute_time`. Devices announcing HTTP are handled through `NSURLConnection`. The latest transfer error is saved to `Documents/LastTransferError.txt`. Outgoing files are loaded entirely into memory, so small files are recommended for older devices.
 
-Логотип из предоставленного SVG хранится в Resources/localsend.svg и рисуется векторными кривыми в LSDesign.m. Иконки интерфейса рисуются средствами UIKit; SwiftUI и SF Symbols не используются.
+The supplied SVG logo is stored in `Resources/localsend.svg` and drawn using vector curves in `LSDesign.m`. Interface icons are drawn with UIKit; SwiftUI and SF Symbols are not used.
 
-## Приём
+## Receiving
 
-Оставьте приложение открытым, на втором устройстве выберите этот iPhone и отправьте файлы. Подтвердите запрос кнопкой «Принять». После завершения нажмите файл на экране получения для просмотра и меню экспорта. Файлы также доступны через «Файл» и iTunes File Sharing. Изображения и совместимые видео автоматически сохраняются в системную фототеку через AssetsLibrary. MP4/MOV с H.264 сохраняются без преобразования, если система принимает исходный файл. Для остальных декодируемых видео применяется AVFoundation с экспортом H.264/AAC 640×480. HEVC/H.265, неподдерживаемые кодеки и ошибки экспорта не удаляют оригинал: приложение показывает ошибку сохранения. HEIC / HEIF преобразуются в JPEG встроенным libheif + libde265, оригинал остаётся в Documents. Для старого устройства конвертация ограничена 24 мегапикселями; более крупный оригинал сохраняется в приложении с сообщением об ошибке конвертации. При первом сохранении разрешите доступ к «Фото». Если доступ запрещён, разрешите его в Настройки → Конфиденциальность → Фото. Во время ожидания подтверждения, активной передачи и очереди сохранения медиа автоблокировка отключается; при завершении восстанавливается. Фоновый приём не поддерживается.
+Keep the app open, select this iPhone on the other device, and send files. Confirm the request by tapping Accept. Once the transfer finishes, tap a file on the receiving screen to preview it and access the export menu. Files are also available through File and iTunes File Sharing.
 
-## Ресурсы интерфейса
+Images and compatible videos are automatically saved to the system photo library through AssetsLibrary. H.264 MP4/MOV files are saved without conversion when the system accepts the original. Other videos the system can decode are exported through AVFoundation as H.264/AAC at 640×480. HEVC/H.265, unsupported codecs, and export failures do not cause the original to be deleted: the app displays a save error.
 
-Иконка приложения: Assets/AppIcon.png, размеры 57/114/120 px в Resources. Таблицы переводов: Assets/Translations.tsv; `python3 scripts/build_localizations.py` пересоздаёт ru/en/uk.lproj. Смена языка применяется сразу и сохраняется между запусками.
+HEIC / HEIF images are converted to JPEG using the bundled libheif + libde265 libraries, while the original remains in Documents. Conversion is limited to 24 megapixels for older devices. Larger originals remain in the app, with a conversion error message.
 
-## Проверки
+Allow access to Photos when saving for the first time. If access is denied, enable it under Settings → Privacy → Photos. Auto-lock is disabled while waiting for confirmation, transferring files, or processing the media save queue, and restored when processing finishes. Background receiving is not supported.
 
-`python3 scripts/check_mbedtls.py` проверяет исходящий TLS 1.2 / 1.3 с серверным pin и обязательным клиентским сертификатом, по три запроса с 215 КБ в одном процессе. `python3 scripts/check_receiver.py` проверяет HTTPS-приём, подтверждение/отклонение, chunked, токены, занятость, checksum, совпавшие имена, несколько файлов, нулевой файл, отмену активной загрузки и отправку нашим нативным транспортом в наш приёмник. `python3 scripts/check_heic.py` проверяет C-мост декодирования на HEIC из libheif и HEIC от Apple, запись корректного JPEG и отказ на повреждённом файле. Для него используются нативные тестовые архивы /tmp/localsend-heic-mac; armv7 архивы воспроизводятся скриптом build_heic.py. Сохранение через AssetsLibrary и разрешение доступа требуют проверки на телефоне. Тесты выполняются на Mac против временных локальных серверов; время на старом iPhone не измерено.
+## Interface Resources
 
-Официальная спецификация: [LocalSend Protocol v2](https://github.com/localsend/protocol).
+The app icon source is `Assets/AppIcon.png`, with 57/114/120 px versions in `Resources`. Translation tables are stored in `Assets/Translations.tsv`; `python3 scripts/build_localizations.py` regenerates the `ru/en/uk.lproj` resources. Language changes take effect immediately and persist between launches.
+
+## Checks
+
+`python3 scripts/check_mbedtls.py` checks outgoing TLS 1.2 / 1.3 with server certificate pinning and a required client certificate, using three requests with 215 KB payloads in one process.
+
+`python3 scripts/check_receiver.py` checks HTTPS receiving, acceptance and rejection, chunked transfer encoding, tokens, busy state, checksums, conflicting filenames, multiple files, an empty file, cancellation of an active upload, and sending from the native transport to the native receiver.
+
+`python3 scripts/check_heic.py` checks the C decoding bridge with a libheif HEIC sample and an Apple HEIC file, valid JPEG output, and rejection of a corrupt file. It uses native test libraries in `/tmp/localsend-heic-mac`; the armv7 libraries can be rebuilt with `build_heic.py`.
+
+Saving through AssetsLibrary and photo library permissions require testing on a device. The tests run on a Mac against temporary local servers; performance on an older iPhone has not been measured.
+
+Official specification: [LocalSend Protocol v2](https://github.com/localsend/protocol).
